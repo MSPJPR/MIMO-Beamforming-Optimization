@@ -19,8 +19,6 @@ This project optimizes power allocation in a MIMO (Multiple Input Multiple Outpu
 
 Frontend: HTML, CSS, JavaScript
 
-Execution Environment: Termux on Moto G45 (No external dependencies)
-
 Graph Visualization: HTML5 Canvas API
 
 
