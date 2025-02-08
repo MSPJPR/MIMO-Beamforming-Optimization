@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIMO Beamforming Optimization</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>MIMO Beamforming Optimization</h1>
+
+        <div class="slider-container">
+            <label for="antennas">Number of Antennas:</label>
+            <input type="range" id="antennas" min="1" max="10" value="4" oninput="updateValues()">
+            <span id="antennasValue">4</span>
+        </div>
+
+        <div class="slider-container">
+            <label for="power">Total Power (Watts):</label>
+            <input type="range" id="power" min="1" max="100" value="50" oninput="updateValues()">
+            <span id="powerValue">50</span>
+        </div>
+
+        <button onclick="optimize()">Optimize</button>
+
+        <canvas id="graphCanvas"></canvas>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
